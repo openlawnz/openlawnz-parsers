@@ -1,0 +1,19 @@
+{
+  "name": "@openlawnz/openlawnz-parsers",
+  "version": "1.0.0",
+  "description": "Parsers for OpenLaw NZ Pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/openlawnz/openlawnz-parsers.git"
+  },
+  "author": "OpenLaw NZ",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/openlawnz/openlawnz-parsers/issues"
+  },
+  "homepage": "https://github.com/openlawnz/openlawnz-parsers#readme"
+}
