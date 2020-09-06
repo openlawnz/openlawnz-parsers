@@ -1,6 +1,6 @@
 {
   "name": "@openlawnz/openlawnz-parsers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parsers for OpenLaw NZ Pipeline",
   "main": "index.js",
   "scripts": {
