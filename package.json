@@ -1,23 +1,39 @@
 {
-  "name": "@openlawnz/openlawnz-parsers",
-  "version": "1.0.0",
-  "description": "Parsers for OpenLaw NZ Pipeline",
-  "main": "index.js",
-  "scripts": {
-    "build": "",
-    "build:watch": "",
-    "lint": "",
-    "test": "",
-    "test:coverage": ""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/openlawnz/openlawnz-parsers.git"
-  },
-  "author": "OpenLaw NZ",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/openlawnz/openlawnz-parsers/issues"
-  },
-  "homepage": "https://github.com/openlawnz/openlawnz-parsers#readme"
+    "name": "@openlawnz/openlawnz-parsers",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "author": "",
+    "license": "ISC",
+    "scripts": {
+        "build": "rimraf dist && tsc",
+        "build:watch": "rimraf dist && tsc -w",
+        "lint": "eslint . --ext .ts",
+        "test": "jest",
+        "test:coverage": "jest --collectCoverage",
+        "package": "npm run build && npm pack"
+    },
+    "files": [
+        "dist/**/*"
+    ],
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "dependencies": {
+        "fuse.js": "^6.4.1",
+        "pdfjs-dist": "^2.4.456"
+    },
+    "devDependencies": {
+        "@types/jest": "^26.0.13",
+        "@typescript-eslint/eslint-plugin": "^4.0.1",
+        "@typescript-eslint/parser": "^4.0.1",
+        "eslint": "^7.8.1",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "jest": "^26.4.2",
+        "prettier": "^2.1.1",
+        "ts-jest": "^26.3.0",
+        "typescript": "^4.0.2",
+        "rimraf": "^3.0.2"
+    }
 }
