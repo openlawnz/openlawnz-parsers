@@ -1,6 +1,6 @@
 {
     "name": "@openlawnz/openlawnz-parsers",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "OpenLaw NZ Parsers used to extract information from New Zealand case law PDF files.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
