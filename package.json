@@ -1,11 +1,19 @@
 {
     "name": "@openlawnz/openlawnz-parsers",
-    "version": "1.0.0",
-    "description": "",
+    "version": "1.0.1",
+    "description": "OpenLaw NZ Parsers used to extract information from New Zealand case law PDF files.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
-    "author": "",
-    "license": "ISC",
+    "author": "OpenLaw NZ",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/openlawnz/openlawnz-parsers.git"
+    },
+    "bugs": {
+        "url": "https://github.com/openlawnz/openlawnz-parsers/issues"
+    },
+    "homepage": "https://github.com/openlawnz/openlawnz-parsers#readme",
     "scripts": {
         "build": "rimraf dist && tsc",
         "build:watch": "rimraf dist && tsc -w",

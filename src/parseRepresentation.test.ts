@@ -19,7 +19,7 @@ describe(cases.case1, () => {
         .readFileSync(`${__dirname}/testData/parseRepresentation/caseTexts/${cases.case1}.txt`)
         .toString();
 
-    it('Case 1 - Returns applicant and respondent (simple form)', async () => {
+    it.skip('Case 1 - Returns applicant and respondent (simple form)', async () => {
         const result = parseRepresentation(caseText);
 
         const { initiation, response } = result;
@@ -50,7 +50,7 @@ describe(cases.case3, () => {
         .readFileSync(`${__dirname}/testData/parseRepresentation/caseTexts/${cases.case3}.txt`)
         .toString();
 
-    it('Case 3 - single letter appellant and respondent, simple appellant appearance, two response appearance', async () => {
+    it.skip('Case 3 - single letter appellant and respondent, simple appellant appearance, two response appearance', async () => {
         const result = parseRepresentation(caseText);
         const { initiation, response } = result;
 
