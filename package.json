@@ -4,7 +4,11 @@
   "description": "Parsers for OpenLaw NZ Pipeline",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "build": "",
+    "build:watch": "",
+    "lint": "",
+    "test": "",
+    "test:coverage": ""
   },
   "repository": {
     "type": "git",
