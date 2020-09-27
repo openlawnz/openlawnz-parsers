@@ -5,7 +5,7 @@ export default (data) => {
 
     //Get the respondent/defendant name between number
     const responsePattern1 = [
-        {
+        /*{
             //jdo files
             //pattern : /^(First |Second |Third |Fourth )?(Appellants?|Applicants?|Plaintiffs?)\s*(AND)\s*([a-zA-Z0-9\u00C0-\u02AB\s'\(\),]*)\s{2}(First )?\s*(Respondents?|Defendants?)/m,
             //2004-2005 case files
@@ -23,11 +23,11 @@ export default (data) => {
                     patternResultIndex: 6,
                 },
             ],
-        },
+        },*/
         {
             item: [
                 {
-                    pattern: /^(First )?(Respondents?|Defendants?)\s*(AND)?\s*([a-zA-Z0-9\u00C0-\u02AB\s'\(\),]*)\s*(Second)\s*(Respondents?|Defendants?)/im,
+                    pattern:/^(First |Second |Third |Fourth )?(Appellants?|Applicants?|Plaintiffs?)\s*(AND)([a-zA-Z0-9\u00C0-\u02AB\s'\(\),\/.\&\-:]*)\s*(Respondents?|Defendants?|Respondent)/im,
                     patternResultIndex: 4,
                 },
             ],

@@ -19,7 +19,7 @@ describe(cases.case1, () => {
         .readFileSync(`${__dirname}/testData/parseRepresentation/caseTexts/${cases.case1}.txt`)
         .toString();
 
-    it.skip('Case 1 - Returns applicant and respondent (simple form)', async () => {
+    it('Case 1 - Returns applicant and respondent (simple form)', async () => {
         const result = parseRepresentation(caseText);
 
         const { initiation, response } = result;
@@ -50,7 +50,7 @@ describe(cases.case3, () => {
         .readFileSync(`${__dirname}/testData/parseRepresentation/caseTexts/${cases.case3}.txt`)
         .toString();
 
-    it.skip('Case 3 - single letter appellant and respondent, simple appellant appearance, two response appearance', async () => {
+    it('Case 3 - single letter appellant and respondent, simple appellant appearance, two response appearance', async () => {
         const result = parseRepresentation(caseText);
         const { initiation, response } = result;
 
@@ -66,7 +66,7 @@ describe(cases.case4, () => {
         .readFileSync(`${__dirname}/testData/parseRepresentation/caseTexts/${cases.case4}.txt`)
         .toString();
 
-    it.skip('Case 4 - Returns 1 appellant and 2 respondents - first case in multi case only', async () => {
+    it('Case 4 - Returns 1 appellant and 2 respondents - first case in multi case only', async () => {
         const result = parseRepresentation(caseText);
         const { initiation, response } = result;
 
@@ -147,14 +147,14 @@ describe(cases.case8, () => {
         .readFileSync(`${__dirname}/testData/parseRepresentation/caseTexts/${cases.case8}.txt`)
         .toString();
 
-    it.skip('Case 8 - Self represented test', async () => {
+    it('Case 8 - Self represented test', async () => {
         const result = parseRepresentation(caseText);
         const { initiation, response } = result;
 
         expect(initiation.names).toEqual(['NICHOLAS PAUL ALFRED REEKIE']);
         expect(response.names).toEqual(['CLAIMANTS A and B']);
-        expect(initiation.appearance).toEqual('in Person');
-        expect(response.appearance).toEqual('Victoria Casey QC as Amicus Curiae');
+        expect(initiation.appearance).toEqual(['in Person']);
+        expect(response.appearance).toEqual(['Victoria Casey QC as Amicus Curiae']);
     });
 });
 
