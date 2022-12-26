@@ -1,6 +1,6 @@
 {
     "name": "@openlawnz/openlawnz-parsers",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "OpenLaw NZ Parsers used to extract information from New Zealand case law PDF files.",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
@@ -28,20 +28,20 @@
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "dependencies": {
-        "fuse.js": "^6.4.1",
-        "pdfjs-dist": "^2.4.456"
+        "fuse.js": "6.6.2",
+        "pdfjs-dist": "3.1.81"
     },
     "devDependencies": {
-        "@types/jest": "^26.0.13",
-        "@typescript-eslint/eslint-plugin": "^4.0.1",
-        "@typescript-eslint/parser": "^4.0.1",
-        "eslint": "^7.8.1",
-        "eslint-config-prettier": "^6.11.0",
-        "eslint-plugin-prettier": "^3.1.4",
-        "jest": "^26.4.2",
-        "prettier": "^2.1.1",
-        "ts-jest": "^26.3.0",
-        "typescript": "^4.0.2",
+        "@types/jest": "^29.2.4",
+        "@typescript-eslint/eslint-plugin": "^5.47.0",
+        "@typescript-eslint/parser": "^5.47.0",
+        "eslint": "^8.30.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "jest": "^29.3.1",
+        "prettier": "^2.8.1",
+        "ts-jest": "^29.0.3",
+        "typescript": "^4.9.4",
         "rimraf": "^3.0.2"
     }
 }

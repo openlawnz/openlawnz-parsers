@@ -1,4 +1,4 @@
-import pdfjsLib from 'pdfjs-dist/es5/build/pdf.js';
+import { getDocument } from 'pdfjs-dist';
 
 export type PDFJSConversionPage = {
     items: {
@@ -25,7 +25,7 @@ const convertPDFURLWithPDFJS = async (pdfURL: string): Promise<PDFJSConversionPa
     }
 
     const pages = [];
-    const loadingTask = pdfjsLib.getDocument(pdfURL);
+    const loadingTask = getDocument(pdfURL);
     const doc = await loadingTask.promise;
     const numPages = doc.numPages;
 
