@@ -32,7 +32,7 @@ describe('Case Citations', () => {
     it('Testing neutral citation regex - match on each type of neutral', () => {
         const caseText = fs.readFileSync(`${__dirname}/testData/caseCitations/caseCitations.txt`).toString();
 
-        let neutralCitations = caseText.match(regNeutralCite);
+        let neutralCitations = caseText.match(regNeutralCite) || new Array<string>();
         // remove errant line breaks
         neutralCitations = neutralCitations.map((x) => {
             return x.replace(/\n/g, ' ');
