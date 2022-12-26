@@ -22,14 +22,14 @@ describe('convertPDFWithPDFJS', () => {
     it('Throws an error when URL does not exist', async () => {
         await expect(
             convertPDFURLWithPDFJS(
-                'https://openlawnz-pdfs-dev.s3-ap-southeast-2.amazonaws.com/jdo_1376398801000_4ffaed38-cd90-4488-a5da-8b1c61829c5ew.pdf',
+                'https://openlawnz-pdfs-prod.s3-ap-southeast-2.amazonaws.com/jdo_1376398801000_4ffaed38-cd90-4488-a5da-8b1c61829c5ew.pdf',
             ),
         ).rejects.toEqual(new Error('Invalid PDF structure.'));
     });
 
     it('Loads a PDF', async () => {
         const pages = await convertPDFURLWithPDFJS(
-            'https://openlawnz-pdfs-dev.s3-ap-southeast-2.amazonaws.com/jdo_1376398801000_4ffaed38-cd90-4488-a5da-8b1c61829c5e.pdf',
+            'https://openlawnz-pdfs-prod.s3-ap-southeast-2.amazonaws.com/jdo_1376398801000_4ffaed38-cd90-4488-a5da-8b1c61829c5e.pdf',
         );
         expect(pages.length).toBe(8);
     });
